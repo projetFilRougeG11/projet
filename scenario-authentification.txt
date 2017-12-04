@@ -1,0 +1,29 @@
+Titre : S'authentifier
+Résumé : Un utilisateur ou un administrateur s'authentifie sur le site
+Acteurs principaux : Utilisateur inscrit et administrateur
+Version : 1.0
+Date de création : 04/12/2017
+Responsables :
+
+Préconditions :
+Inscription de l'utilisateur.
+
+Scénario nominal :
+1 L'utilisateur inscrit son login/email dans le champs réservé.
+2 L'utilisateur inscrit son mot de passe dans le champs réservé.
+3 Il clique sur le bouton de connexion pour envoyer ces données d'authentification.
+
+Erreurs : 
+Login erroné, n'appartenant pas à la BDD
+A partir de 1 :
+E1-1 Un message d'erreur apparaît informant l'utilisateur de son erreur sur le login.
+
+Mot de passe ne correspondant pas au login
+A partir de 2 :
+E2-1 Un message d'erreur apparaît informant l'utilisateur de son erreur de mot de passe.
+
+Scénarios alternatifs :
+L'utilisateur a perdu son mot de passe
+A1-1 L'utilisateur clique sur le lien réservé.
+A2-1 L'utilisateur reçoit un mail qui lui indique de réinitialiser son mot de passe sur le site.
+A3-1 L'utilisateur réinitialise son mot de passe sur une page dédiée.

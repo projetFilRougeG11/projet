@@ -1,0 +1,43 @@
+Titre : Téléverser un média
+Résumé : Un utilisateur inscrit téléverse et remplit les métadonnées d'un média
+Acteur principal : Utilisateur inscrit
+Version : 1.0
+Date de création : 03/12/2017
+Responsables :
+
+Préconditions :
+Authentification de l'utilisateur.
+
+Scénario nominal :
+1 L'utilisateur choisit, en cliquant sur le bouton "Ajouter un média", d'accéder à la page de téléversement
+2 Dans cette page, il choisit, en parcourant ses fichiers, celui qu'il veut téléverser.
+3 Il le nomme dans le champs réservé.
+4 Il le taggue, 5 fois maximum, dans le champs réservé. [champs grisé après le 5eme tag]
+5 En cliquant sur le bouton de téléversement, il termine le processus.
+[pas de brouillon]
+
+Erreurs:
+Format du média non accepté.
+A partir de 2 :
+	E1-1 Un pop-up/ Un message apparaît informant du mauvais format de fichiers.
+ 
+Espace disque libre insuffisant.
+A partir de 2 :
+	E2-1 Un pop-up/ Un message apparaît informant du manque d'espace sur le serveur de dépôt.
+
+Le nom contient des caractères spéciaux impossibles à traiter.
+A partir de 3 :
+	E3-1 Un message d'erreur apparaît et le système formate le nom ou donne un exemple de format de nom.
+
+Le même tag apparaît deux fois.
+A partir de 4 :
+	E4-A1 Au moment de quitter le champs de saisie, après vérification, le ou les doublons sont retirés.
+	E4-A1 Au moment de la validation, le champs de saisie et les doublons sont surlignés.
+
+Problème de connexion durant la téléversement.
+A partir de 5 :
+	E5-1 Un pop-up / Un message apparaît informant de l'erreur de téléversement et invitant de retenter.
+
+
+
+

@@ -1,0 +1,24 @@
+Titre : S'inscrire
+Résumé : Un visiteur s'inscrit sur le site
+Acteurs principaux : Utilisateur
+Version : 1.0
+Date de création : 05/12/2017
+Responsables :
+
+Scénario nominal :
+1 Sur la page d'inscription, l'utilisateur renseigne son adresse mail et un mot de passe.
+[1.b l'utilisateur remplit les conditions du Captcha]
+2 L'utilisateur confirme son inscription en cliquant sur l'email de confirmation.
+
+Erreurs :
+L'adresse mail ne respecte pas la forme imposée.
+A partir de 1 :
+E1-1 Un message apparaît lui signalant qu'il doit respecter la forme imposée.
+
+Le mot de passe ne contient pas de chiffres et de caractères spéciaux...
+A partir de 1 :
+E2-1 Un message apparaît signalant à l'utilisateur de respecter la forme imposée.
+
+L'utilisateur n'a pas reçu l'email de confirmation
+A partir de 2 :
+E3-1 L'utilisateur peut cliquer sur le bouton "Renvoyer un email de confirmation".

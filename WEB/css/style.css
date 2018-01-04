@@ -1,0 +1,235 @@
+body {
+  padding-top: 60px;
+}
+
+/* div {
+  border: solid 1px black;
+  border-collapse: collapse;
+} */
+
+/* MENU */
+/*  */
+/*  */
+
+.navbar-fixed-left {
+  position: fixed;
+  top: 0;
+  z-index: 1030;
+  background-color: rgba(242, 242, 242, 0.8);
+  border-bottom-right-radius: 5px;
+}
+
+button.navbar-toggle.collapsed{
+  margin-left: 22px;
+}
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+  margin-right: 0px;
+}
+
+#titre {
+  font-family: 'Play', sans-serif;
+  font-weight: bold;
+}
+
+#icones {
+  padding-left: 10px;
+}
+
+#icones span {
+  margin-right: 5px;
+}
+
+#icones .glyphicon {
+  font-size: 1.3em;
+}
+
+a {
+  color: black;
+  font-weight: lighter;
+}
+
+a:hover, a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: black;
+  font-weight: 550;
+}
+
+/* BARRE DE RECHERCHE */
+/*  */
+/*  */
+
+.searchDiv {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.stylish-input-group {
+      width: 75%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+/* CONNEXION/INSCRIPTION */
+/*  */
+/*  */
+
+#inscription, #connexion {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#ajout {
+  margin-top: 35px;
+}
+
+.button {
+  text-transform: uppercase;
+}
+
+/* DIV CAROUSELS */
+/*  */
+/*  */
+
+.col-md-4 h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 75%;
+}
+
+#audio h2, #video h2, #image h2 {
+  display: inline-block;
+}
+
+#audio .glyphicon, #video .glyphicon, #image .glyphicon {
+  font-size: 2em;
+}
+
+/* CAROUSEL */
+/*  */
+/*  */
+/* source : https://www.codeply.com/go/kARgk17JLu */
+
+.carousel-inner.vertical {
+  height: 100%; /*Note: set specific height here if not, there will be some issues with IE browser*/
+}
+.carousel-inner.vertical > .item {
+  -webkit-transition: .6s ease-in-out top;
+  -o-transition: .6s ease-in-out top;
+  transition: .6s ease-in-out top;
+}
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-inner.vertical > .item {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    -o-transition: -o-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  }
+  .carousel-inner.vertical > .item.next,
+  .carousel-inner.vertical > .item.active.right {
+    -webkit-transform: translate3d(0, 33.33%, 0);
+    transform: translate3d(0, 33.33%, 0);
+    top: 0;
+  }
+  .carousel-inner.vertical > .item.prev,
+  .carousel-inner.vertical > .item.active.left {
+    -webkit-transform: translate3d(0, -33.33%, 0);
+    transform: translate3d(0, -33.33%, 0);
+    top: 0;
+  }
+  .carousel-inner.vertical > .item.next.left,
+  .carousel-inner.vertical > .item.prev.right,
+  .carousel-inner.vertical > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    top: 0;
+  }
+}
+
+.carousel-inner.vertical > .active {
+  top: 0;
+}
+.carousel-inner.vertical > .next,
+.carousel-inner.vertical > .prev {
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+.carousel-inner.vertical > .next {
+  left: 0;
+  top: 33.33%;
+  right:0;
+}
+.carousel-inner.vertical > .prev {
+  left: 0;
+  top: -33.33%;
+  right:0;
+}
+.carousel-inner.vertical > .next.left,
+.carousel-inner.vertical > .prev.right {
+  top: 0;
+}
+.carousel-inner.vertical > .active.left {
+  left: 0;
+  top: -33.33%;
+  right:0;
+}
+.carousel-inner.vertical > .active.right {
+  left: 0;
+  top: 33.33%;
+  right:0;
+}
+
+#carousel-pagerA .carousel-control.left, #carousel-pagerB .carousel-control.left, #carousel-pagerC .carousel-control.left {
+    bottom: initial;
+    width: 100%;
+}
+#carousel-pagerA .carousel-control.right, #carousel-pagerB .carousel-control.right, #carousel-pagerC .carousel-control.right {
+    top: initial;
+    width: 100%;
+}
+
+/* CLASSEMENT */
+/*  */
+/*  */
+
+.table {
+  width: 75%;
+  border: solid 1px black;
+  border-radius: 3px;
+  margin : auto;
+  margin-top: 30px;
+}
+
+/* FOOTER */
+/*  */
+/*  */
+
+footer {
+  background-color: rgba(210, 210, 210, 0.8);
+  min-height: 150px;
+  margin-top: 40px;
+}
